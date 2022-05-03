@@ -1,7 +1,7 @@
 package javinfo
 
 type JAVInfo interface {
-	GetTitleByCode(Code) *Title
+	FindByCode(Code) ([]*Title, error)
 }
 
 func New() JAVInfo {
